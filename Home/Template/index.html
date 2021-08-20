@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>7o7</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Shohrux7o7</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+                            <img width="25px" id="icon" src="{% static './assets/img/moon.png' %}" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Salom,<br>Men <span class="home__title-color">Shohrux7o7</span><br> Full-Stack developer</h1>
+
+                    <a href="#" class="button">Aloqa</a>
+                </div>
+                <div class="home__social">
+                    <a href="https://t.me/Shohrux7o7" class="home__social-icon"><i class='bx bxl-telegram' ></i></a>
+                    <a href="https://github.com/Shohrux7o7" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.facebook.com/shohrux.islomov.5494" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/_shohrux7o7_" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="{% static 'assets/img/perfil.jpg' %}" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Men haqimda</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/Shohrux7o7.jpg' %}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Men Shohrux7o7</h2>
+                        <p class="about__text"><strong>Hello my name is Shohrux. My surname is Islomov. I'm 16 years old. I study for IT-Park Samarkand. I am Full-Stack developer.</strong></p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">100%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Django</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="{% static 'assets/img/work3.jpg' %}" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Ishlarim</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work1.jpg' %}" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work2.jpg' %}" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work3.jpg' %}" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work4.jpg' %}" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work5.jpg' %}" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'assets/img/work6.jpg' %}" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Aloqa</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" method="POST" class="contact__form">
+                        {% csrf_token %}
+                        <input type="text" name="user" placeholder="Ismingiz" class="contact__input">
+                        <input type="mail" name="pochta" placeholder="Email" class="contact__input">
+                        <textarea name="xabar" placeholder="Xabaringiz..." id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Shohrux7o7</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/shohrux.islomov.5494" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/_shohrux7o7_" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://t.me/Shohrux7o7" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+            </div>
+            <p>&#169; By_Shohrux7o7 2021.07.19 10:53:17</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>
